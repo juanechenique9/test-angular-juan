@@ -7,7 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FileComponent } from './pages/file/file.component';
 import { SharedComponentsModule } from './shared/shared-components.module';
 
-
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { SharedComponentsModule } from './shared/shared-components.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedComponentsModule
+    SharedComponentsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

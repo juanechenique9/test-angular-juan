@@ -4,7 +4,8 @@
       <app-input [form]="formLogin"
         [control]="'user'"
         [placeHolder]="'Username'"
-        [label]="'Username'">
+        [label]="'Username'"
+        [type]="'text'">
       </app-input>
       <app-input [form]="formLogin"
         [control]="'password'"
@@ -14,7 +15,7 @@
       </app-input>
     </div>
     <div class="login-card__send">
-      <app-button [disabled]="formLogin.invalid"></app-button>
+      <app-button [disabled]="formLogin.invalid" (clickEvent)="authUser()"></app-button>
     </div>
   </div>
 </div>
