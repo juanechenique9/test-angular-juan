@@ -1,0 +1,7 @@
+<button [ngClass]="type === 'primary' ? 'button-primary' : 'button-secondary'"
+  [disabled]="disabled"
+  (click)="click()">
+  <div class="button-generic__text">
+    {{label}}
+  </div>
+</button>

@@ -1,0 +1,20 @@
+<div class="login">
+  <div class="login-card">
+    <div class="login-card__data">
+      <app-input [form]="formLogin"
+        [control]="'user'"
+        [placeHolder]="'Username'"
+        [label]="'Username'">
+      </app-input>
+      <app-input [form]="formLogin"
+        [control]="'password'"
+        [placeHolder]="'******'"
+        [label]="'Password'"
+        [type]="'password'">
+      </app-input>
+    </div>
+    <div class="login-card__send">
+      <app-button [disabled]="formLogin.invalid"></app-button>
+    </div>
+  </div>
+</div>

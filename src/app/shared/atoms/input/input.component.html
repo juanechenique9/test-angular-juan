@@ -1,0 +1,14 @@
+<div [formGroup]="form"
+  class="input-generic">
+  <label class="input-generic__label">{{label}}</label>
+  <input class="input-generic__field"
+    [type]="type"
+    [value]="this.form.controls[this.control].value"
+    [formControlName]="control"
+    placeholder="{{ placeHolder }}" />
+  <label class="input-generic__errors"
+    id="error-description"
+    *ngIf="form.controls[control].invalid && form.controls[control].touched">
+    Campo es requerido
+  </label>
+</div>
